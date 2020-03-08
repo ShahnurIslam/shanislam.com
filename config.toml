@@ -85,16 +85,16 @@ enableEmoji = true
             defaultHiddenFromHomePage = false
         # Social Info in home page
         [languages.en.params.social]
-          GitHub = "xxxx"
+          # GitHub = "xxxx"
           Linkedin = "http://www.linkedin.com/in/shanislam"
-          Twitter = "xxxx"
+          Twitter = "http://www.twitter.com/_ShanIslam"
           #Instagram = "xxxx"
           #Email = "xxxx@xxxx.com"
           #Facebook = "xxxx"
           #Telegram = "xxxx"
           # Medium = "xxxx"
           # Gitlab = "xxxx"
-          Youtubelegacy = "xxxx"
+          # Youtubelegacy = "xxxx"
           # Youtubecustom = "xxxx"
           # Youtubechannel = "xxxx"
           # Tumblr ="xxxx"
@@ -234,7 +234,7 @@ enableEmoji = true
   [params.footer]
     # Site creation time
     # 网站创立年份
-    since = 2019
+    since = 2020
     # ICP info only in China (HTML format is allowed)
     # ICP 备案信息，仅在中国使用 (允许使用 HTML 格式)
     icp = ""
