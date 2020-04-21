@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>docker on Shan Islam</title>
+    <link>/tags/docker/</link>
+    <description>Recent content in docker on Shan Islam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Tue, 21 Apr 2020 21:56:27 +0100</lastBuildDate>
+    
+	<atom:link href="/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Docker</title>
+      <link>/docker/</link>
+      <pubDate>Tue, 21 Apr 2020 21:56:27 +0100</pubDate>
+      
+      <guid>/docker/</guid>
+      <description>Table of Contents  Commands  Start a shell prompt  Breakdown of docker image  Execute Python commands in container    Docker Images  python3, java8 and Haskell     Commands Start a shell prompt To start a shell script inside a running container
+docker exec -it &amp;lt;container_name&amp;gt; bash
+To start a shell script inside an image
+docker run -it --entrypoint /bin/bash &amp;lt;image&amp;gt;
+Breakdown of docker image Will show a breakdown of layers of docker image</description>
+    </item>
+    
+  </channel>
+</rss>

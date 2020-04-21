@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>G1 Climax | Shan Islam</title>
+        <meta name="Description" content="About LoveIt Theme"><meta property="og:title" content="G1 Climax" />
+<meta property="og:description" content="Here&rsquo;s a post that is slightly different to the other posts that I&rsquo;ve done so far. Rather than having a step by step tutorial on how to do something. The below allows me to work on my python skills and explain a few things as I go along.
+People who work in Data Science tend to work in programming languages R or Python. I&rsquo;ve been learning both languages over the last two years and at the moment I&rsquo;m trying to get better at my Python." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/2017-10-23-g1-climax/" />
+<meta property="article:published_time" content="2017-10-23T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-03-08T23:26:28+00:00" /><meta property="og:site_name" content="Shan Islam" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="G1 Climax"/>
+<meta name="twitter:description" content="Here&rsquo;s a post that is slightly different to the other posts that I&rsquo;ve done so far. Rather than having a step by step tutorial on how to do something. The below allows me to work on my python skills and explain a few things as I go along.
+People who work in Data Science tend to work in programming languages R or Python. I&rsquo;ve been learning both languages over the last two years and at the moment I&rsquo;m trying to get better at my Python."/>
+<meta name="theme-color" content="#ffffff">
+<meta name="msapplication-TileColor" content="#da532c">
+<link rel="canonical" href="/2017-10-23-g1-climax/" />
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="prev" href="/2017-06-03-pip-install-guide-mini-post/" /><link rel="next" href="/2018-01-23-new-year-new-post/" /><link rel="stylesheet" href="/lib/fontawesome-free/all.min.9a680b90260b5106d79f4075491ab31daafa7429eff686453c40b58357309649.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="><link rel="stylesheet" href="/lib/animate/animate.min.3c770e90f98eb21b0c042fafb49755af93306fbaf42e449524f94fae9fc83295.css" integrity="sha256-PHcOkPmOshsMBC&#43;vtJdVr5Mwb7r0LkSVJPlPrp/IMpU="><link rel="stylesheet" href="/css/style.min.bb6883333b29f23fd0523d2cd1d5fdc57fbe38d5b32c16c2061c53c8efe28ee5.css" integrity="sha256-u2iDMzsp8j/QUj0s0dX9xX&#43;&#43;ONWzLBbCBhxTyO/ijuU=">
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "G1 Climax",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "\/2017-10-23-g1-climax\/"
+        },"image": {
+                "@type": "ImageObject",
+                "url": "\/cover.png",
+                "width":  800 ,
+                "height":  600 
+            },"genre": "posts","keywords": "data science, python","wordcount":  2172 ,
+        "url": "\/2017-10-23-g1-climax\/","datePublished": "2017-10-23T00:00:00\x2b00:00","dateModified": "2020-03-08T23:26:28\x2b00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+                "@type": "Organization",
+                "name": "xxxx",
+                "logo": {
+                "@type": "ImageObject",
+                "url": "\/logo.png",
+                "width":  127 ,
+                "height":  40 
+                }
+            },"description": ""
+    }
+    </script></head>
+    <body><script>
+            if (!window.localStorage || !window.localStorage.getItem('theme')) {window.isDark = 'light' === 'dark';} else {
+                window.isDark = (window.localStorage && window.localStorage.getItem('theme')) === 'dark';
+            }
+            window.isDark && document.body.classList.add('dark-theme');
+        </script><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title animated bounceIn">
+            <a href="/">Shan Islam</a>
+        </div>
+        <div class="menu"><a class="menu-item" href="/posts/">Posts</a><a class="menu-item" href="/docker/">Docker</a><a class="menu-item" href="/python/">Python</a><a class="menu-item" href="/scala/">Scala</a><a class="menu-item" href="/tags/">Tags</a><a class="menu-item" href="/about/">About</a><a href="javascript:void(0);" class="theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-rotate-180 fa-fw"></i>
+            </a>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-wrapper">
+        <div class="header-container">
+            <div class="header-title animated bounceIn">
+                <a href="/">Shan Islam</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/docker/" title="">Docker</a><a class="menu-item" href="/python/" title="">Python</a><a class="menu-item" href="/scala/" title="">Scala</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/about/" title="">About</a><a href="javascript:void(0);" class="theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-rotate-180 fa-fw"></i>
+            </a>
+        </div>
+    </div>
+</header>
+
+<script>
+    window.desktopHeaderMode = "fixed";
+    window.mobileHeaderMode = "auto";
+</script>
+<main class="main">
+                <div class="container"><article class="page single"><h1 class="single-title animated flipInX">G1 Climax</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author">
+                    <a class="author" href="/" rel="author" target="_blank">
+                        <i class="fas fa-user-circle fa-fw"></i>Shan Islam
+                    </a>
+                </span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=2017-10-23>2017-10-23</time>&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>about 2172 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>11 min&nbsp;</div>
+        </div><div class="content" id="content"><p>Here&rsquo;s a post that is slightly different to the other posts that I&rsquo;ve done so far. Rather than having a step by step tutorial
+on how to do something. The below allows me to work on my python skills and explain a few things as I go along.</p>
+<p>People who work in Data Science tend to work in programming languages R or Python. I&rsquo;ve been learning both languages over the last two years and at the moment I&rsquo;m trying to get better at my Python. One of things people say is to get better at data science is to work on data that you have an interest in.</p>
+<p>One of my main passions in life has been wrestling (which my wife says is lame).  I&rsquo;ve watched wrestling for the last 19 years which when you write down is actually quite scary. In this case, I decided do some analysis on Japanese Wrestling! In particular, the G1 Climax tournament.</p>
+<p><figure><a class="lightgallery" href="/img/G1271.jpg" title="G127" data-thumbnail="/img/G1271.jpg">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-sizes="auto"
+            data-srcset="/img/G1271.jpg, /img/G1271.jpg 1.5x, /img/G1271.jpg 2x"
+            data-src="/img/G1271.jpg"
+            alt="G127" />
+    </a><figcaption class="image-caption">G127</figcaption></figure>
+</p>
+<p>The G1 Climax is an annual Japanese wrestling tournament that&rsquo;s held every summer over 20 days. Rather than a simple knockout tournament it&rsquo;s a league made up of two blocks (named A block &amp; B block) each consisting of 20 wrestlers. The winner of each block then face off and the winner goes to headline wrestle kingdom in January.</p>
+<p>I made the below in Jupyter Notebook and converted it to a markdown file to post on the site. Let&rsquo;s begin!</p>
+<p>Let&rsquo;s start off with importing all the relevant libraries which will be updated as we go</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span> <span class="c1">#standard package to work with dataframes</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">itertools</span> <span class="c1"># We use this to do some permutations to work out potential matches</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="kn">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="kn">import</span> <span class="nn">decimal</span>
+<span class="kn">import</span> <span class="nn">datetime</span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">r2_score</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span><span class="s1">&#39;white&#39;</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Here are some potential things to look at:
+<em>Who on average has highest match rating?
+Does Dave Meltzer&rsquo;s rating correlate with match time or any other variables?</em></p>
+<p>Let&rsquo;s start off by reading the csv file I quickly made up with the wrestler&rsquo;s names and which block they&rsquo;re in.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&#34;G1 Competitors.csv&#34;</span><span class="p">)</span> <span class="c1">#Using pandas read_csv</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>We use the data frame property .info() to give us some quick info on the data frame</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span> <span class="c1">#use the dataframe propetry .info() to give us information on the dataframe</span>
+</code></pre></td></tr></table>
+</div>
+</div><pre><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
+RangeIndex: 10 entries, 0 to 9
+Data columns (total 2 columns):
+A Block    10 non-null object
+B Block    10 non-null object
+dtypes: object(2)
+memory usage: 240.0+ bytes
+</code></pre>
+<p>The information above tells us that the data frame only contains 10 entries with no null objects which is good to see. We can just type in <strong>df</strong> into the console and see what the whole data frame looks like. Of course if we had more rows we wouldn&rsquo;t be able to do this and would use <em>df.head()</em></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span>
+</code></pre></td></tr></table>
+</div>
+</div><table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="left">A Block</th>
+<th align="left">B Block</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">0</td>
+<td align="left">Hiroshi Tanahashi</td>
+<td align="left">Kazuchika Okada</td>
+</tr>
+<tr>
+<td align="left">1</td>
+<td align="left">Togi Makabe</td>
+<td align="left">Toru Yano</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">Tomohiro Ishii</td>
+<td align="left">Satoshi Kojima</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">Hirooki Goto</td>
+<td align="left">Michael Elgin</td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">YOSHI-HASHI</td>
+<td align="left">Juice Robinson</td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left">Bad Luck Fale</td>
+<td align="left">Tama Tonga</td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td align="left">Yuji Nagata</td>
+<td align="left">SANADA</td>
+</tr>
+<tr>
+<td align="left">7</td>
+<td align="left">Zack Sabre Jr.</td>
+<td align="left">EVIL</td>
+</tr>
+<tr>
+<td align="left">8</td>
+<td align="left">Kota Ibushi</td>
+<td align="left">Minoru Suzuki</td>
+</tr>
+<tr>
+<td align="left">9</td>
+<td align="left">Tetsuya Naito</td>
+<td align="left">Kenny Omega</td>
+</tr>
+</tbody>
+</table>
+<p>I noticed that some of the wrestler&rsquo;s name have capitals while others don&rsquo;t. Let&rsquo;s convert all the names to upper case.
+We use the data frame method applymap which applies a function to every cell in a data frame and rather than writing a whole function we will just create one inside in the applymap also known as an anonymous function.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">applymap</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span> 
+<span class="n">df</span> <span class="c1"># Let&#39;s print the dataframe to see if that&#39;s worked</span>
+</code></pre></td></tr></table>
+</div>
+</div><table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="left">A Block</th>
+<th align="left">B Block</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">0</td>
+<td align="left">HIROSHI TANAHASHI</td>
+<td align="left">KAZUCHIKA OKADA</td>
+</tr>
+<tr>
+<td align="left">1</td>
+<td align="left">TOGI MAKABE</td>
+<td align="left">TORU YANO</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">TOMOHIRO ISHII</td>
+<td align="left">SATOSHI KOJIMA</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">HIROOKI GOTO</td>
+<td align="left">MICHAEL ELGIN</td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">YOSHI-HASHI</td>
+<td align="left">JUICE ROBINSON</td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left">BAD LUCK FALE</td>
+<td align="left">TAMA TONGA</td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td align="left">YUJI NAGATA</td>
+<td align="left">SANADA</td>
+</tr>
+<tr>
+<td align="left">7</td>
+<td align="left">ZACK SABRE JR.</td>
+<td align="left">EVIL</td>
+</tr>
+<tr>
+<td align="left">8</td>
+<td align="left">KOTA IBUSHI</td>
+<td align="left">MINORU SUZUKI</td>
+</tr>
+<tr>
+<td align="left">9</td>
+<td align="left">TETSUYA NAITO</td>
+<td align="left">KENNY OMEGA</td>
+</tr>
+</tbody>
+</table>
+<p>Let&rsquo;s now separate the wrestler from data frames <strong>df</strong> in two data frames called <strong>A_Block</strong> and <strong>B_Block</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">A_Block</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;A Block&#39;</span><span class="p">])</span>
+<span class="n">A_Block</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Wrestler&#39;</span><span class="p">]</span>
+<span class="n">B_Block</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;B Block&#39;</span><span class="p">])</span>
+<span class="n">B_Block</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Wrestler&#39;</span><span class="p">]</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Ok we&rsquo;ve now got two separate data frames called <em>A_Block</em> &amp; <em>B_Block</em>. Let&rsquo;s add the usual fields you&rsquo;d see in any sports league <strong>&lsquo;Matches&rsquo;,&lsquo;Wins&rsquo;,&lsquo;Losses&rsquo;,&lsquo;Draws&rsquo;</strong>.</p>
+<p>I&rsquo;m also going to include <strong>&lsquo;Match Time&rsquo;</strong> as the total time a wrestler has competed. I also plan to add another column called <strong>&lsquo;DMR&rsquo;</strong>, which stands for Dave Meltzer Rating. Dave Meltzer is a 30 year wrestling journalist whose ratings of matches are out of five and is held in high standing in the wrestling community. By default, I&rsquo;ve set these to NaN</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">A_Block</span><span class="p">[</span><span class="s1">&#39;Matches&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">NAN</span>
+<span class="n">A_Block</span><span class="p">[</span><span class="s1">&#39;Wins&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">NAN</span>
+<span class="n">A_Block</span><span class="p">[</span><span class="s1">&#39;Losses&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">NAN</span>
+<span class="n">A_Block</span><span class="p">[</span><span class="s1">&#39;Draws&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">NAN</span>
+<span class="n">A_Block</span><span class="p">[</span><span class="s1">&#39;Points&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">NAN</span>
+<span class="n">A_Block</span><span class="p">[</span><span class="s1">&#39;Match_Time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">NAN</span>
+<span class="n">A_Block</span><span class="p">[</span><span class="s1">&#39;DMR&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.00</span>
+<span class="n">B_Block</span><span class="p">[</span><span class="s1">&#39;Matches&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">NAN</span>
+<span class="n">B_Block</span><span class="p">[</span><span class="s1">&#39;Wins&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">NAN</span>
+<span class="n">B_Block</span><span class="p">[</span><span class="s1">&#39;Losses&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">NAN</span>
+<span class="n">B_Block</span><span class="p">[</span><span class="s1">&#39;Draws&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">NAN</span>
+<span class="n">B_Block</span><span class="p">[</span><span class="s1">&#39;Points&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">NAN</span>
+<span class="n">B_Block</span><span class="p">[</span><span class="s1">&#39;Match_Time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">NAN</span>
+<span class="n">B_Block</span><span class="p">[</span><span class="s1">&#39;DMR&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.00</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Lets use head to see if the tables has been set up correctly</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">A_Block</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="left">Wrestler</th>
+<th align="left">Matches</th>
+<th align="left">Wins</th>
+<th align="left">Losses</th>
+<th align="left">Draws</th>
+<th align="left">Points</th>
+<th align="left">Match_Time</th>
+<th align="left">DMR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">0</td>
+<td align="left">HIROSHI TANAHASHI</td>
+<td align="left">NaN</td>
+<td align="left">NaN</td>
+<td align="left">NaN</td>
+<td align="left">NaN</td>
+<td align="left">NaN</td>
+<td align="left">NaN</td>
+<td align="left">0.0</td>
+</tr>
+</tbody>
+</table>
+<p>Checking B Block</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">B_Block</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="c1">#B block</span>
+</code></pre></td></tr></table>
+</div>
+</div><table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="left">Wrestler</th>
+<th align="left">Matches</th>
+<th align="left">Wins</th>
+<th align="left">Losses</th>
+<th align="left">Draws</th>
+<th align="left">Points</th>
+<th align="left">Match_Time</th>
+<th align="left">DMR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">0</td>
+<td align="left">KAZUCHIKA OKADA</td>
+<td align="left">NaN</td>
+<td align="left">NaN</td>
+<td align="left">NaN</td>
+<td align="left">NaN</td>
+<td align="left">NaN</td>
+<td align="left">NaN</td>
+<td align="left">0.0</td>
+</tr>
+</tbody>
+</table>
+<p>We&rsquo;ve now created our results data frames. Let&rsquo;s create two more dataframes that records the result of each match. First of all how many potential matches are there per block? This is a form of permutations, well actually combinations as we don&rsquo;t take the order of the wrestlers into account. We can use the combinations formula(below) where my <em><strong>n=10</strong></em> &amp; <em><strong>r=2</strong></em></p>
+<p><figure><a class="lightgallery" href="/img/Combination_equation.gif" title="Combination_equation" data-thumbnail="/img/Combination_equation.gif">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-sizes="auto"
+            data-srcset="/img/Combination_equation.gif, /img/Combination_equation.gif 1.5x, /img/Combination_equation.gif 2x"
+            data-src="/img/Combination_equation.gif"
+            alt="Combination_equation" />
+    </a><figcaption class="image-caption">Combination_equation</figcaption></figure>
+</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">math</span><span class="o">.</span><span class="n">factorial</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">factorial</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">factorial</span><span class="p">(</span><span class="mi">10</span><span class="o">-</span><span class="mi">2</span><span class="p">))</span>
+</code></pre></td></tr></table>
+</div>
+</div><pre><code>45.0
+</code></pre>
+<p>This tells us there are a total of 45 possible matches for each block.</p>
+<p>I was going to write a custom function to list all these possible matches but luckily the python community is so large someone has already done this for me! The function I&rsquo;m going to use is within the python library <strong>itertools</strong>. We will use the function <strong>combinations()</strong> as we&rsquo;re looking for all unique combinations. The combination function takes a series as a parameter so we can&rsquo;t simply pass in the data frame and we need to select the Wrestler column as a series.</p>
+<p>Using the combination function, I&rsquo;ll create two new data frames called <strong>A_matches</strong> and <strong>B_matches</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">A_matches</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="o">.</span><span class="n">from_records</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">itertools</span><span class="o">.</span><span class="n">combinations</span><span class="p">(</span><span class="n">A_Block</span><span class="p">[</span><span class="s1">&#39;Wrestler&#39;</span><span class="p">],</span><span class="mi">2</span><span class="p">)),</span> <span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Wrestler 1&#39;</span><span class="p">,</span> <span class="s1">&#39;Wrestler 2&#39;</span><span class="p">])</span>
+<span class="n">B_matches</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="o">.</span><span class="n">from_records</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">itertools</span><span class="o">.</span><span class="n">combinations</span><span class="p">(</span><span class="n">B_Block</span><span class="p">[</span><span class="s1">&#39;Wrestler&#39;</span><span class="p">],</span><span class="mi">2</span><span class="p">)),</span> <span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Wrestler 1&#39;</span><span class="p">,</span> <span class="s1">&#39;Wrestler 2&#39;</span><span class="p">])</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Check that A_matches data frame has been set up correctly</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">A_matches</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</code></pre></td></tr></table>
+</div>
+</div><table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="left">Wrestler 1</th>
+<th align="left">Wrestler 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">0</td>
+<td align="left">HIROSHI TANAHASHI</td>
+<td align="left">TOGI MAKABE</td>
+</tr>
+<tr>
+<td align="left">1</td>
+<td align="left">HIROSHI TANAHASHI</td>
+<td align="left">TOMOHIRO ISHII</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">HIROSHI TANAHASHI</td>
+<td align="left">HIROOKI GOTO</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">HIROSHI TANAHASHI</td>
+<td align="left">YOSHI-HASHI</td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">HIROSHI TANAHASHI</td>
+<td align="left">BAD LUCK FALE</td>
+</tr>
+</tbody>
+</table>
+<p>Ok we&rsquo;ve got all the potential matches for each block. Let&rsquo;s add a few more fields to these data frames. Let&rsquo;s add the fields <strong>Winner, Loser, Match_Time, Draw, DMR</strong>. We&rsquo;ve also added a match counter field labelled <strong>Matches</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python">
+<span class="n">A_matches</span><span class="p">[</span><span class="s1">&#39;Winner&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">NAN</span>
+
+<span class="n">B_matches</span><span class="p">[</span><span class="s1">&#39;Winner&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">NAN</span>
+
+<span class="n">A_matches</span><span class="p">[</span><span class="s1">&#39;Loser&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">NAN</span>
+
+<span class="n">B_matches</span><span class="p">[</span><span class="s1">&#39;Loser&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">NAN</span>
+
+<span class="n">A_matches</span><span class="p">[</span><span class="s1">&#39;Match&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="n">B_matches</span><span class="p">[</span><span class="s1">&#39;Match&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="n">B_matches</span><span class="p">[</span><span class="s1">&#39;Match_Time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">NAN</span>
+
+<span class="n">A_matches</span><span class="p">[</span><span class="s1">&#39;Match_Time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">NAN</span>
+
+<span class="n">B_matches</span><span class="p">[</span><span class="s1">&#39;Draw&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">False</span>
+
+<span class="n">A_matches</span><span class="p">[</span><span class="s1">&#39;Draw&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">False</span>
+
+<span class="n">B_matches</span><span class="p">[</span><span class="s1">&#39;DMR&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.00</span>
+
+<span class="n">A_matches</span><span class="p">[</span><span class="s1">&#39;DMR&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.00</span>
+
+</code></pre></td></tr></table>
+</div>
+</div><p>Again check the table has been updated</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python">
+<span class="n">A_matches</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+
+</code></pre></td></tr></table>
+</div>
+</div><table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="left">Wrestler 1</th>
+<th align="left">Wrestler 2</th>
+<th align="left">Winner</th>
+<th align="left">Loser</th>
+<th align="left">Match</th>
+<th align="left">Match_Time</th>
+<th align="left">Draw</th>
+<th align="left">DMR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">0</td>
+<td align="left">HIROSHI TANAHASHI</td>
+<td align="left">TOGI MAKABE</td>
+<td align="left">NaN</td>
+<td align="left">NaN</td>
+<td align="left">1</td>
+<td align="left">NaN</td>
+<td align="left">False</td>
+<td align="left">0.0</td>
+</tr>
+<tr>
+<td align="left">1</td>
+<td align="left">HIROSHI TANAHASHI</td>
+<td align="left">TOMOHIRO ISHII</td>
+<td align="left">NaN</td>
+<td align="left">NaN</td>
+<td align="left">1</td>
+<td align="left">NaN</td>
+<td align="left">False</td>
+<td align="left">0.0</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">HIROSHI TANAHASHI</td>
+<td align="left">HIROOKI GOTO</td>
+<td align="left">NaN</td>
+<td align="left">NaN</td>
+<td align="left">1</td>
+<td align="left">NaN</td>
+<td align="left">False</td>
+<td align="left">0.0</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">HIROSHI TANAHASHI</td>
+<td align="left">YOSHI-HASHI</td>
+<td align="left">NaN</td>
+<td align="left">NaN</td>
+<td align="left">1</td>
+<td align="left">NaN</td>
+<td align="left">False</td>
+<td align="left">0.0</td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">HIROSHI TANAHASHI</td>
+<td align="left">BAD LUCK FALE</td>
+<td align="left">NaN</td>
+<td align="left">NaN</td>
+<td align="left">1</td>
+<td align="left">NaN</td>
+<td align="left">False</td>
+<td align="left">0.0</td>
+</tr>
+</tbody>
+</table>
+<p>Ok we now have a table of the potential matches and all the additional fields. I decided to write two custom functions, one that updates the matches data frames with the results and the other to update the block table. I didn&rsquo;t want to type out the full names either as the spellings of Japanese names can be quite hard. So the function does a partial match and prints out the names it&rsquo;s matched as a check.</p>
+<p>I didn&rsquo;t want to bombard this post with long bits of code so those functions and updates can be found here:</p>
+<p><a href="https://github.com/ShahnurIslam/shahnurislam.github.io/blob/master/_posts/2017-10-23-G1_Climax_code.md" target="_blank" rel="noopener noreffer">Code for Functions and update</a>
+</p>
+<p>Let&rsquo;s look at the results tables and see who came out on top!</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">A_Block</span>
+</code></pre></td></tr></table>
+</div>
+</div><table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="left">Wrestler</th>
+<th align="left">Matches</th>
+<th align="left">Wins</th>
+<th align="left">Losses</th>
+<th align="left">Draws</th>
+<th align="left">Points</th>
+<th align="left">Match_Time</th>
+<th align="left">DMR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">0</td>
+<td align="left">TETSUYA NAITO</td>
+<td align="left">9</td>
+<td align="left">7</td>
+<td align="left">2</td>
+<td align="left">0</td>
+<td align="left">14</td>
+<td align="left">0.0</td>
+<td align="left">4.000000</td>
+</tr>
+<tr>
+<td align="left">1</td>
+<td align="left">HIROSHI TANAHASHI</td>
+<td align="left">9</td>
+<td align="left">6</td>
+<td align="left">3</td>
+<td align="left">0</td>
+<td align="left">12</td>
+<td align="left">0.0</td>
+<td align="left">4.111111</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">BAD LUCK FALE</td>
+<td align="left">9</td>
+<td align="left">6</td>
+<td align="left">3</td>
+<td align="left">0</td>
+<td align="left">12</td>
+<td align="left">0.0</td>
+<td align="left">3.166667</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">KOTA IBUSHI</td>
+<td align="left">9</td>
+<td align="left">5</td>
+<td align="left">4</td>
+<td align="left">0</td>
+<td align="left">10</td>
+<td align="left">0.0</td>
+<td align="left">4.222222</td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">ZACK SABRE JR.</td>
+<td align="left">9</td>
+<td align="left">5</td>
+<td align="left">4</td>
+<td align="left">0</td>
+<td align="left">10</td>
+<td align="left">0.0</td>
+<td align="left">3.611111</td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left">HIROOKI GOTO</td>
+<td align="left">9</td>
+<td align="left">5</td>
+<td align="left">4</td>
+<td align="left">0</td>
+<td align="left">10</td>
+<td align="left">0.0</td>
+<td align="left">3.694444</td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td align="left">TOMOHIRO ISHII</td>
+<td align="left">9</td>
+<td align="left">4</td>
+<td align="left">5</td>
+<td align="left">0</td>
+<td align="left">8</td>
+<td align="left">0.0</td>
+<td align="left">4.250000</td>
+</tr>
+<tr>
+<td align="left">7</td>
+<td align="left">TOGI MAKABE</td>
+<td align="left">9</td>
+<td align="left">4</td>
+<td align="left">5</td>
+<td align="left">0</td>
+<td align="left">8</td>
+<td align="left">0.0</td>
+<td align="left">3.611111</td>
+</tr>
+<tr>
+<td align="left">8</td>
+<td align="left">YOSHI-HASHI</td>
+<td align="left">9</td>
+<td align="left">2</td>
+<td align="left">7</td>
+<td align="left">0</td>
+<td align="left">4</td>
+<td align="left">0.0</td>
+<td align="left">3.638889</td>
+</tr>
+<tr>
+<td align="left">9</td>
+<td align="left">YUJI NAGATA</td>
+<td align="left">9</td>
+<td align="left">1</td>
+<td align="left">8</td>
+<td align="left">0</td>
+<td align="left">2</td>
+<td align="left">0.0</td>
+<td align="left">4.138889</td>
+</tr>
+</tbody>
+</table>
+<p>B Block..</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">B_Block</span>
+</code></pre></td></tr></table>
+</div>
+</div><table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="left">Wrestler</th>
+<th align="left">Matches</th>
+<th align="left">Wins</th>
+<th align="left">Losses</th>
+<th align="left">Draws</th>
+<th align="left">Points</th>
+<th align="left">Match_Time</th>
+<th align="left">DMR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">0</td>
+<td align="left">KENNY OMEGA</td>
+<td align="left">9</td>
+<td align="left">7</td>
+<td align="left">2</td>
+<td align="left">0</td>
+<td align="left">14</td>
+<td align="left">0.0</td>
+<td align="left">3.888889</td>
+</tr>
+<tr>
+<td align="left">1</td>
+<td align="left">KAZUCHIKA OKADA</td>
+<td align="left">9</td>
+<td align="left">6</td>
+<td align="left">2</td>
+<td align="left">1</td>
+<td align="left">13</td>
+<td align="left">0.0</td>
+<td align="left">4.250000</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">EVIL</td>
+<td align="left">9</td>
+<td align="left">6</td>
+<td align="left">3</td>
+<td align="left">0</td>
+<td align="left">12</td>
+<td align="left">0.0</td>
+<td align="left">3.444444</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">MINORU SUZUKI</td>
+<td align="left">9</td>
+<td align="left">4</td>
+<td align="left">4</td>
+<td align="left">1</td>
+<td align="left">9</td>
+<td align="left">0.0</td>
+<td align="left">3.611111</td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">SANADA</td>
+<td align="left">9</td>
+<td align="left">4</td>
+<td align="left">5</td>
+<td align="left">0</td>
+<td align="left">8</td>
+<td align="left">0.0</td>
+<td align="left">3.666667</td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left">MICHAEL ELGIN</td>
+<td align="left">9</td>
+<td align="left">4</td>
+<td align="left">5</td>
+<td align="left">0</td>
+<td align="left">8</td>
+<td align="left">0.0</td>
+<td align="left">3.583333</td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td align="left">JUICE ROBINSON</td>
+<td align="left">9</td>
+<td align="left">4</td>
+<td align="left">5</td>
+<td align="left">0</td>
+<td align="left">8</td>
+<td align="left">0.0</td>
+<td align="left">3.222222</td>
+</tr>
+<tr>
+<td align="left">7</td>
+<td align="left">TAMA TONGA</td>
+<td align="left">9</td>
+<td align="left">4</td>
+<td align="left">5</td>
+<td align="left">0</td>
+<td align="left">8</td>
+<td align="left">0.0</td>
+<td align="left">2.944444</td>
+</tr>
+<tr>
+<td align="left">8</td>
+<td align="left">TORU YANO</td>
+<td align="left">9</td>
+<td align="left">4</td>
+<td align="left">5</td>
+<td align="left">0</td>
+<td align="left">8</td>
+<td align="left">0.0</td>
+<td align="left">1.750000</td>
+</tr>
+<tr>
+<td align="left">9</td>
+<td align="left">SATOSHI KOJIMA</td>
+<td align="left">9</td>
+<td align="left">1</td>
+<td align="left">8</td>
+<td align="left">0</td>
+<td align="left">2</td>
+<td align="left">0.0</td>
+<td align="left">3.305556</td>
+</tr>
+</tbody>
+</table>
+<p>Data tables are fine, but a visual representation is always better. Let&rsquo;s have a look at the block results in graph form, using the Seaborn package</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python">
+<span class="n">ax</span><span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="s1">&#39;Wrestler&#39;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Points&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">A_Block</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span> <span class="s1">&#39;Red&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">18</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">despine</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;points&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;A Block&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="s1">&#39;Wrestler&#39;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Points&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">B_Block</span><span class="p">,</span>  <span class="n">color</span><span class="o">=</span> <span class="s1">&#39;Blue&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">18</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">despine</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span> 
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;points&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;B Block&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><figure><a class="lightgallery" href="/img/chart_1.png" title="png" data-thumbnail="/img/chart_1.png">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-sizes="auto"
+            data-srcset="/img/chart_1.png, /img/chart_1.png 1.5x, /img/chart_1.png 2x"
+            data-src="/img/chart_1.png"
+            alt="png" />
+    </a><figcaption class="image-caption">png</figcaption></figure>
+</p>
+<p><figure><a class="lightgallery" href="/img/output_40_1.png" title="png" data-thumbnail="/img/output_40_1.png">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-sizes="auto"
+            data-srcset="/img/output_40_1.png, /img/output_40_1.png 1.5x, /img/output_40_1.png 2x"
+            data-src="/img/output_40_1.png"
+            alt="png" />
+    </a><figcaption class="image-caption">png</figcaption></figure>
+</p>
+<p>The winner of the A Block was Kenny Omega and the B Block was Tetsuya Naito who are two of the biggest wrestlers there so not a surprise <em>(Yes I know wrestling is fake as my wife keeps saying)</em></p>
+<p>Ok who was the highest rated star of the tournament</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">Combined</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">A_Block</span><span class="p">,</span> <span class="n">B_Block</span><span class="p">])</span>
+<span class="n">Combined</span><span class="p">[</span><span class="s1">&#39;Block&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">NAN</span>
+<span class="n">Combined</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">,</span><span class="mi">8</span><span class="p">]</span> <span class="o">=</span><span class="s2">&#34;A Block&#34;</span>
+<span class="n">Combined</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">10</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span><span class="mi">8</span><span class="p">]</span> <span class="o">=</span><span class="s2">&#34;B Block&#34;</span>
+<span class="n">Combined</span> <span class="o">=</span> <span class="n">Combined</span><span class="o">.</span><span class="n">sort_values</span><span class="p">([</span><span class="s1">&#39;DMR&#39;</span><span class="p">],</span><span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="s1">&#39;Wrestler&#39;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;DMR&#39;</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">Combined</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;Gold&#39;</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">despine</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Average Dave Meltzer Rating&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><figure><a class="lightgallery" href="/img/output_43_0.png" title="png" data-thumbnail="/img/output_43_0.png">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-sizes="auto"
+            data-srcset="/img/output_43_0.png, /img/output_43_0.png 1.5x, /img/output_43_0.png 2x"
+            data-src="/img/output_43_0.png"
+            alt="png" />
+    </a><figcaption class="image-caption">png</figcaption></figure>
+</p>
+<p>Ok so the top two wrestlers were Tomohiro Ishii and Kazuchika Okada. I wasn&rsquo;t surprised with Okada who&rsquo;s doing amazing this year but Ishii was a surprise. Yano had the worst overall rating which kind of makes sense as he&rsquo;s more of a comedy act and not a competitive wrestler.</p>
+<p>One of the potential questions I had was if a good Meltzer rating related to the match length. Let&rsquo;s plot these two against each other.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">C_matches</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">A_matches</span><span class="p">,</span> <span class="n">B_matches</span><span class="p">])</span>
+<span class="n">C_matches</span><span class="p">[</span><span class="s1">&#39;Match_Time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">C_matches</span><span class="p">[</span><span class="s1">&#39;Match_Time&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;:&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">regplot</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="s1">&#39;DMR&#39;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Match_Time&#39;</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">C_matches</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><figure><a class="lightgallery" href="/img/output_46_0.png" title="png" data-thumbnail="/img/output_46_0.png">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-sizes="auto"
+            data-srcset="/img/output_46_0.png, /img/output_46_0.png 1.5x, /img/output_46_0.png 2x"
+            data-src="/img/output_46_0.png"
+            alt="png" />
+    </a><figcaption class="image-caption">png</figcaption></figure>
+</p>
+<p>OK so some correlation between the two which makes some sense. Obviously this doesn&rsquo;t account for who&rsquo;s in the match and what actually happened in it. Let&rsquo;s see what our equation would look like</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python">
+<span class="n">lm</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">()</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">C_matches</span><span class="p">[</span><span class="s1">&#39;Match_Time&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">[:,</span><span class="n">np</span><span class="o">.</span><span class="n">newaxis</span><span class="p">]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">C_matches</span><span class="p">[</span><span class="s1">&#39;DMR&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+<span class="n">lm</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+<span class="n">m</span> <span class="o">=</span> <span class="n">lm</span><span class="o">.</span><span class="n">coef_</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">lm</span><span class="o">.</span><span class="n">intercept_</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&#34;Our Linear equation is &#34;</span> <span class="o">+</span> <span class="s1">&#39;y = {0} * x + {1}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">b</span><span class="p">))</span>
+</code></pre></td></tr></table>
+</div>
+</div><pre><code>Our Linear equation is y = 0.002155728983767316 * x + 1.8171627906221903
+</code></pre>
+<p>Let&rsquo;s see what the mean squared error is and variance score. These calculations tell us how well our model fits the data.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="s2">&#34;Mean squared error: </span><span class="si">%.2f</span><span class="s2">&#34;</span> <span class="o">%</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">((</span><span class="n">lm</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span> <span class="o">-</span> <span class="n">y</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span><span class="p">))</span>
+<span class="c1"># Explained variance score: 1 is perfect prediction</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;Variance score: </span><span class="si">%.2f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">lm</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">))</span>
+</code></pre></td></tr></table>
+</div>
+</div><pre><code>Mean squared error: 0.36
+Variance score: 0.58
+</code></pre>
+<p>Ok so in our model, 58% of the variability in Match ratings can be explained using match time. We also got a really low mean squared error which means the model is a really good fit.</p>
+<p><strong>But like I said this doesn&rsquo;t account for the context of the matches despite the good fit.</strong></p>
+<p>Hopefully this wasn&rsquo;t too complicated but I wanted to do analysis on some data that I was interested in. I&rsquo;ll most likely add to this post in the future as I learn more modelling tools that account for more of the variables present.</p>
+<p>Thanks for reading this post if you did! Any feedback or tips as always would be greatly appreciated.</p>
+<p>Shan</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>The article was updated on 2020-03-08&nbsp;<a class="git-hash" href="https://github.com/dillonzq/LoveIt/commit/f345d5696941c56cb2539b6ec93a22524f809a59" target="_blank" title="commit by shahnur.islam(shahnur.islam@royalmail.com) f345d5696941c56cb2539b6ec93a22524f809a59: all posts moved over">
+                            <i class="fas fa-hashtag fa-fw"></i>f345d56</a></span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/2017-10-23-g1-climax/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="/2017-10-23-g1-climax/" data-title="G1 Climax" data-via="http://www.twitter.com/_ShanIslam" data-hashtags="data science,python"><i class="fab fa-twitter fa-fw"></i>
+</a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/2017-10-23-g1-climax/" data-hashtag="data science"><i class="fab fa-facebook-square fa-fw"></i>
+</a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="/2017-10-23-g1-climax/"><i class="fab fa-linkedin fa-fw"></i>
+</a><a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="/2017-10-23-g1-climax/" data-title="G1 Climax" data-web><i class="fab fa-whatsapp fa-fw"></i>
+</a><a href="javascript:void(0);" title="Share on Pinterest" data-sharer="pinterest" data-url="/2017-10-23-g1-climax/"><i class="fab fa-pinterest fa-fw"></i>
+</a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="/2017-10-23-g1-climax/" data-title="G1 Climax"><i class="fab fa-hacker-news fa-fw"></i>
+</a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section><span>
+                        <a href="/tags/data-science">
+                            <i class="fas fa-tag fa-fw"></i>data science
+                        </a>
+                    </span>&nbsp;<span>
+                        <a href="/tags/python">
+                            <i class="fas fa-tag fa-fw"></i>python
+                        </a>
+                    </span>&nbsp;</section>
+        <section>
+            <span><a href="javascript:window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/2017-06-03-pip-install-guide-mini-post/" class="prev" rel="prev" title="Pip install guide[Mini-Post]"><i class="fas fa-angle-left fa-fw"></i>Pip install guide[Mini-Post]</a>
+            <a href="/2018-01-23-new-year-new-post/" class="next" rel="next" title="New Year, New post!">New Year, New post!<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+<div class="comment"><div id="disqus_thread"></div><noscript>
+            Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript></div>
+    </article></div>
+            </main><footer class="footer">
+    <div class="copyright"><div class="copyright-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreffer">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="external nofollow noopener noreffer">LoveIt<i class="far fa-heart fa-fw"></i></a>
+        </div>
+
+        <div class="copyright-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Shan Islam</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+    </div>
+</footer>
+</div><a href="#" class="dynamic-to-top animated faster" id="dynamic-to-top">
+            <span>&nbsp;</span>
+        </a><script>
+        document.addEventListener('DOMContentLoaded', function () {
+            lightGallery(document.getElementById('content'), {
+                selector: '.lightgallery',
+                speed: 400,
+                hideBarsDelay: 2000,
+                thumbnail: true,
+                exThumbImage: 'data-thumbnail',
+                thumbWidth: 80,
+                thumbContHeight: 80,
+            });
+        });
+    </script><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.a0f67639490aba5d9a250783c0aa0ed69f83a6f151fb0d7b9fb617c9dbc54565.css" integrity="sha256-oPZ2OUkKul2aJQeDwKoO1p&#43;DpvFR&#43;w17n7YXydvFRWU="><script src="https://dillonzq.disqus.com/embed.js"></script><script src="/lib/smooth-scroll/smooth-scroll.polyfills.min.54590077ee163035c3dd38dc034e9f6915ecbe680dd832f449afa21672cab116.js" integrity="sha256-VFkAd&#43;4WMDXD3TjcA06faRXsvmgN2DL0Sa&#43;iFnLKsRY="></script><script src="/lib/sharer/sharer.min.9c88f86c7f0820287113f6236200459832693656e80d7556cc80a93dfbd45813.js" integrity="sha256-nIj4bH8IIChxE/YjYgBFmDJpNlboDXVWzICpPfvUWBM="></script><script src="/lib/lazysizes/lazysizes.min.876b4c12685e991d88378c1b6dd3638fd2da0c88f3c24da1ada950c1f26604e1.js" integrity="sha256-h2tMEmhemR2IN4wbbdNjj9LaDIjzwk2hralQwfJmBOE="></script><script src="/lib/lightgallery/lightgallery.min.7a84c63ab156d68e4a7269487c9c65a4eb34b0c7864f2d3fd2b87f7c664480d3.js" integrity="sha256-eoTGOrFW1o5KcmlIfJxlpOs0sMeGTy0/0rh/fGZEgNM="></script><script src="/lib/lightgallery/lg-thumbnail.min.eab31af8f90835b7ab674b2dd2474841039bc01022aa312f80dde6e22fde58d7.js" integrity="sha256-6rMa&#43;PkINberZ0st0kdIQQObwBAiqjEvgN3m4i/eWNc="></script><script src="/lib/lightgallery/lg-zoom.min.e3a7e6bb4a69f8627654ba9e0ab1252971bcfb400538dbb0605db9a3342ce5b9.js" integrity="sha256-46fmu0pp&#43;GJ2VLqeCrElKXG8&#43;0AFONuwYF25ozQs5bk="></script><script src="/js/theme.min.1482fc67bfa2c3b8cebe476d0037b9321b5b7a8a1525b547b94143948be90e9e.js" integrity="sha256-FIL8Z7&#43;iw7jOvkdtADe5MhtbeooVJbVHuUFDlIvpDp4="></script></body>
+</html>

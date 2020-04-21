@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SQL on Shan Islam</title>
+    <link>/tags/sql/</link>
+    <description>Recent content in SQL on Shan Islam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Fri, 09 Mar 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SQL Part 2 of 4</title>
+      <link>/2017-03-09-sql-part-2-of-4/</link>
+      <pubDate>Fri, 09 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2017-03-09-sql-part-2-of-4/</guid>
+      <description>I said I&amp;rsquo;d continue these posts this year and that&amp;rsquo;s what I plan to do! A sequel to my post on SQL! (My wife thought this was a terrible joke)
+Now let&amp;rsquo;s talk about SEGMENTATION!
+Segmentation isn&amp;rsquo;t something I found as intuitive as basic SQL. You can generally figure out what a basic SQL statement is going to do before it runs. Have a look at my last SQL post for an example.</description>
+    </item>
+    
+    <item>
+      <title>SQL part 1 of 4</title>
+      <link>/2017-05-15-sql-part-1-of-4/</link>
+      <pubDate>Mon, 15 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017-05-15-sql-part-1-of-4/</guid>
+      <description>I had to recall what SQL(Structured Query Language) actually stood for because no one actually calls it &amp;lsquo;Structured Query Language&amp;rsquo;. People just refer to it as &amp;lsquo;see-kwel&amp;rsquo; or as my wife calls it a sequel to a movie and that Godfather 2 is the only acceptable kind.
+If you have a lot of historic data that you need to access and interrogate regularly then SQL is probably the way to go.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>SQL part 1 of 4 | Shan Islam</title>
+        <meta name="Description" content="About LoveIt Theme"><meta property="og:title" content="SQL part 1 of 4" />
+<meta property="og:description" content="I had to recall what SQL(Structured Query Language) actually stood for because no one actually calls it &lsquo;Structured Query Language&rsquo;. People just refer to it as &lsquo;see-kwel&rsquo; or as my wife calls it a sequel to a movie and that Godfather 2 is the only acceptable kind.
+If you have a lot of historic data that you need to access and interrogate regularly then SQL is probably the way to go." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/2017-05-15-sql-part-1-of-4/" />
+<meta property="article:published_time" content="2017-05-15T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-03-08T23:26:28+00:00" /><meta property="og:site_name" content="Shan Islam" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="SQL part 1 of 4"/>
+<meta name="twitter:description" content="I had to recall what SQL(Structured Query Language) actually stood for because no one actually calls it &lsquo;Structured Query Language&rsquo;. People just refer to it as &lsquo;see-kwel&rsquo; or as my wife calls it a sequel to a movie and that Godfather 2 is the only acceptable kind.
+If you have a lot of historic data that you need to access and interrogate regularly then SQL is probably the way to go."/>
+<meta name="theme-color" content="#ffffff">
+<meta name="msapplication-TileColor" content="#da532c">
+<link rel="canonical" href="/2017-05-15-sql-part-1-of-4/" />
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="prev" href="/2017-04-06-first-post/" /><link rel="next" href="/2017-06-03-pip-install-guide-mini-post/" /><link rel="stylesheet" href="/lib/fontawesome-free/all.min.9a680b90260b5106d79f4075491ab31daafa7429eff686453c40b58357309649.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="><link rel="stylesheet" href="/lib/animate/animate.min.3c770e90f98eb21b0c042fafb49755af93306fbaf42e449524f94fae9fc83295.css" integrity="sha256-PHcOkPmOshsMBC&#43;vtJdVr5Mwb7r0LkSVJPlPrp/IMpU="><link rel="stylesheet" href="/css/style.min.bb6883333b29f23fd0523d2cd1d5fdc57fbe38d5b32c16c2061c53c8efe28ee5.css" integrity="sha256-u2iDMzsp8j/QUj0s0dX9xX&#43;&#43;ONWzLBbCBhxTyO/ijuU=">
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "SQL part 1 of 4",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "\/2017-05-15-sql-part-1-of-4\/"
+        },"image": {
+                "@type": "ImageObject",
+                "url": "\/cover.png",
+                "width":  800 ,
+                "height":  600 
+            },"genre": "posts","keywords": "data science, sql","wordcount":  478 ,
+        "url": "\/2017-05-15-sql-part-1-of-4\/","datePublished": "2017-05-15T00:00:00\x2b00:00","dateModified": "2020-03-08T23:26:28\x2b00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+                "@type": "Organization",
+                "name": "xxxx",
+                "logo": {
+                "@type": "ImageObject",
+                "url": "\/logo.png",
+                "width":  127 ,
+                "height":  40 
+                }
+            },"description": ""
+    }
+    </script></head>
+    <body><script>
+            if (!window.localStorage || !window.localStorage.getItem('theme')) {window.isDark = 'light' === 'dark';} else {
+                window.isDark = (window.localStorage && window.localStorage.getItem('theme')) === 'dark';
+            }
+            window.isDark && document.body.classList.add('dark-theme');
+        </script><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title animated bounceIn">
+            <a href="/">Shan Islam</a>
+        </div>
+        <div class="menu"><a class="menu-item" href="/posts/">Posts</a><a class="menu-item" href="/docker/">Docker</a><a class="menu-item" href="/python/">Python</a><a class="menu-item" href="/scala/">Scala</a><a class="menu-item" href="/tags/">Tags</a><a class="menu-item" href="/about/">About</a><a href="javascript:void(0);" class="theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-rotate-180 fa-fw"></i>
+            </a>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-wrapper">
+        <div class="header-container">
+            <div class="header-title animated bounceIn">
+                <a href="/">Shan Islam</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/docker/" title="">Docker</a><a class="menu-item" href="/python/" title="">Python</a><a class="menu-item" href="/scala/" title="">Scala</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/about/" title="">About</a><a href="javascript:void(0);" class="theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-rotate-180 fa-fw"></i>
+            </a>
+        </div>
+    </div>
+</header>
+
+<script>
+    window.desktopHeaderMode = "fixed";
+    window.mobileHeaderMode = "auto";
+</script>
+<main class="main">
+                <div class="container"><article class="page single"><h1 class="single-title animated flipInX">SQL part 1 of 4</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author">
+                    <a class="author" href="/" rel="author" target="_blank">
+                        <i class="fas fa-user-circle fa-fw"></i>Shan Islam
+                    </a>
+                </span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=2017-05-15>2017-05-15</time>&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>about 478 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>3 min&nbsp;</div>
+        </div><div class="content" id="content"><p>I had to recall what SQL(Structured Query Language) actually stood for because no one actually calls it &lsquo;Structured Query Language&rsquo;.
+People just refer to it as &lsquo;see-kwel&rsquo; or as my wife calls it a sequel to a movie and that Godfather 2 is the only acceptable kind.</p>
+<p>If you have a lot of historic data that you need to access and interrogate regularly then SQL is probably the way to go.
+As a programming language it&rsquo;s probably one of the softer languages and can be learnt by most people. Most of the basic queries are easy to understand if the columns of your data are labelled well. You can usualy decipher what they were asking of the data.</p>
+<p>Like the query below whcich simply returns all the first names from your customers present in your database.
+</br></br></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-SQL" data-lang="SQL"><span class="k">SELECT</span> <span class="n">first_name</span> <span class="k">FROM</span> <span class="n">customer</span>
+</code></pre></td></tr></table>
+</div>
+</div></br>
+However it does have its pitfall. 
+<p>-Someone needs to maintain the data</p>
+<p>-Whatever goes into the database will be outputted. Or as programmers like to say &lsquo;rubbish in = rubbish out.</p>
+<p>-For more complicated questions, queries can become quite large.</p>
+<p>I&rsquo;m not going to be teaching SQL in this blog as that&rsquo;s not why I started it. There are plenty of places online that have good tutorals already so just Google &lsquo;SQL tutorials&rsquo; and you should find them.</p>
+<p>However I will recommend the site <a href="http://sqlzoo.net/" target="_blank" rel="noopener noreffer">SQL ZOO</a>
+. They do have tutorials on there but I recommend the site for the assessment examples. Which asks you questions about a database and you need to write queries to answer them. I alway find the best way to learn is by doing.</p>
+<p>When i first started learning SQL a few years ago, i thought to myself &lsquo;I&rsquo;m good at this&rsquo; despite only doing simple joins and basic queres.
+I then remember doing a SQL test once in the very early days of my career. A simple question came up and I was stumped:</br></br></p>
+<h4 id="how-would-you-find-a-customers-first-order-datebrbr">&ldquo;How would you find a customer&rsquo;s first order date?&ldquo;</br></br></h4>
+<p>Ok&hellip;i thought let me sort the colums by order date then customer. But ok how do I get the first order date for each customer. I racked my brain and no matter how I sliced the data it just wouldn&rsquo;t work.</p>
+<p>After the test was done, I looked up the answer and it was so simple I was gobsmacked. All I had to do was use the function <em>MIN()</em>
+Which basically returns the minimum value in a list that also happens to works with date.</p>
+<p>It made me realise how much I need to learn about SQL.
+Ever since then I&rsquo;ve practiced more, read more but still have a long way to go.</p>
+<p>Here are a few things I plan to learn and will cover in the next post</p>
+<p>-Segmentation</p>
+<p>-Windows functions</p>
+<p>-Stored procedures</p>
+<p>-Rank</p>
+<p>Not sure if anyone is reading this but thanks if you did.</p>
+<p>Shan.</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>The article was updated on 2020-03-08&nbsp;<a class="git-hash" href="https://github.com/dillonzq/LoveIt/commit/f345d5696941c56cb2539b6ec93a22524f809a59" target="_blank" title="commit by shahnur.islam(shahnur.islam@royalmail.com) f345d5696941c56cb2539b6ec93a22524f809a59: all posts moved over">
+                            <i class="fas fa-hashtag fa-fw"></i>f345d56</a></span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/2017-05-15-sql-part-1-of-4/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="/2017-05-15-sql-part-1-of-4/" data-title="SQL part 1 of 4" data-via="http://www.twitter.com/_ShanIslam" data-hashtags="data science,sql"><i class="fab fa-twitter fa-fw"></i>
+</a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/2017-05-15-sql-part-1-of-4/" data-hashtag="data science"><i class="fab fa-facebook-square fa-fw"></i>
+</a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="/2017-05-15-sql-part-1-of-4/"><i class="fab fa-linkedin fa-fw"></i>
+</a><a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="/2017-05-15-sql-part-1-of-4/" data-title="SQL part 1 of 4" data-web><i class="fab fa-whatsapp fa-fw"></i>
+</a><a href="javascript:void(0);" title="Share on Pinterest" data-sharer="pinterest" data-url="/2017-05-15-sql-part-1-of-4/"><i class="fab fa-pinterest fa-fw"></i>
+</a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="/2017-05-15-sql-part-1-of-4/" data-title="SQL part 1 of 4"><i class="fab fa-hacker-news fa-fw"></i>
+</a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section><span>
+                        <a href="/tags/data-science">
+                            <i class="fas fa-tag fa-fw"></i>data science
+                        </a>
+                    </span>&nbsp;<span>
+                        <a href="/tags/sql">
+                            <i class="fas fa-tag fa-fw"></i>sql
+                        </a>
+                    </span>&nbsp;</section>
+        <section>
+            <span><a href="javascript:window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/2017-04-06-first-post/" class="prev" rel="prev" title="First post!"><i class="fas fa-angle-left fa-fw"></i>First post!</a>
+            <a href="/2017-06-03-pip-install-guide-mini-post/" class="next" rel="next" title="Pip install guide[Mini-Post]">Pip install guide[Mini-Post]<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+<div class="comment"><div id="disqus_thread"></div><noscript>
+            Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript></div>
+    </article></div>
+            </main><footer class="footer">
+    <div class="copyright"><div class="copyright-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreffer">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="external nofollow noopener noreffer">LoveIt<i class="far fa-heart fa-fw"></i></a>
+        </div>
+
+        <div class="copyright-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Shan Islam</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+    </div>
+</footer>
+</div><a href="#" class="dynamic-to-top animated faster" id="dynamic-to-top">
+            <span>&nbsp;</span>
+        </a><script src="https://dillonzq.disqus.com/embed.js"></script><script src="/lib/smooth-scroll/smooth-scroll.polyfills.min.54590077ee163035c3dd38dc034e9f6915ecbe680dd832f449afa21672cab116.js" integrity="sha256-VFkAd&#43;4WMDXD3TjcA06faRXsvmgN2DL0Sa&#43;iFnLKsRY="></script><script src="/lib/sharer/sharer.min.9c88f86c7f0820287113f6236200459832693656e80d7556cc80a93dfbd45813.js" integrity="sha256-nIj4bH8IIChxE/YjYgBFmDJpNlboDXVWzICpPfvUWBM="></script><script src="/js/theme.min.1482fc67bfa2c3b8cebe476d0037b9321b5b7a8a1525b547b94143948be90e9e.js" integrity="sha256-FIL8Z7&#43;iw7jOvkdtADe5MhtbeooVJbVHuUFDlIvpDp4="></script></body>
+</html>

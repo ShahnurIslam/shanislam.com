@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python on Shan Islam</title>
+    <link>/tags/python/</link>
+    <description>Recent content in python on Shan Islam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Tue, 18 Dec 2018 15:36:35 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Python</title>
+      <link>/python/</link>
+      <pubDate>Tue, 18 Dec 2018 15:36:35 +0000</pubDate>
+      
+      <guid>/python/</guid>
+      <description>Table of Contents  Pandas  Pandas Conditonal Column  Applying functions to Pandas columns     Pandas Pandas Conditonal Column A conditional column is a column in a dataframe that is generated based on other column/s. There are multiple way of doing this in Python but one of the quickest ways is to use the np.where() function. This function is basically the equivalent of an if statement in Excel.</description>
+    </item>
+    
+    <item>
+      <title>G1 Climax</title>
+      <link>/2017-10-23-g1-climax/</link>
+      <pubDate>Mon, 23 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017-10-23-g1-climax/</guid>
+      <description>Here&amp;rsquo;s a post that is slightly different to the other posts that I&amp;rsquo;ve done so far. Rather than having a step by step tutorial on how to do something. The below allows me to work on my python skills and explain a few things as I go along.
+People who work in Data Science tend to work in programming languages R or Python. I&amp;rsquo;ve been learning both languages over the last two years and at the moment I&amp;rsquo;m trying to get better at my Python.</description>
+    </item>
+    
+    <item>
+      <title>Pip install guide[Mini-Post]</title>
+      <link>/2017-06-03-pip-install-guide-mini-post/</link>
+      <pubDate>Sat, 03 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017-06-03-pip-install-guide-mini-post/</guid>
+      <description>I will get back to the SQL posts but thought I would post something that could be useful to others. If you want to use Python for Data Science you will need additional python libraries.
+I don&amp;rsquo;t have a huge understanding of command line functions and I found it a bit difficult to find a step by step guide on how to install python libraries .
+My wife(the doctor) thought that PIP was something else medical related from a scandal a few years ago.</description>
+    </item>
+    
+  </channel>
+</rss>

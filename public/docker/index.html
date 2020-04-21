@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Docker | Shan Islam</title>
+        <meta name="Description" content="About LoveIt Theme"><meta property="og:title" content="Docker" />
+<meta property="og:description" content="Table of Contents  Commands  Start a shell prompt  Breakdown of docker image  Execute Python commands in container    Docker Images  python3, java8 and Haskell     Commands Start a shell prompt To start a shell script inside a running container
+docker exec -it &lt;container_name&gt; bash
+To start a shell script inside an image
+docker run -it --entrypoint /bin/bash &lt;image&gt;
+Breakdown of docker image Will show a breakdown of layers of docker image" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/docker/" />
+<meta property="article:published_time" content="2020-04-21T21:56:27+01:00" />
+<meta property="article:modified_time" content="2020-04-21T21:56:27+01:00" /><meta property="og:site_name" content="Shan Islam" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Docker"/>
+<meta name="twitter:description" content="Table of Contents  Commands  Start a shell prompt  Breakdown of docker image  Execute Python commands in container    Docker Images  python3, java8 and Haskell     Commands Start a shell prompt To start a shell script inside a running container
+docker exec -it &lt;container_name&gt; bash
+To start a shell script inside an image
+docker run -it --entrypoint /bin/bash &lt;image&gt;
+Breakdown of docker image Will show a breakdown of layers of docker image"/>
+<meta name="theme-color" content="#ffffff">
+<meta name="msapplication-TileColor" content="#da532c">
+<link rel="canonical" href="/docker/" />
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="prev" href="/python/" /><link rel="next" href="/scala/" /><link rel="stylesheet" href="/lib/fontawesome-free/all.min.9a680b90260b5106d79f4075491ab31daafa7429eff686453c40b58357309649.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="><link rel="stylesheet" href="/lib/animate/animate.min.3c770e90f98eb21b0c042fafb49755af93306fbaf42e449524f94fae9fc83295.css" integrity="sha256-PHcOkPmOshsMBC&#43;vtJdVr5Mwb7r0LkSVJPlPrp/IMpU="><link rel="stylesheet" href="/css/style.min.bb6883333b29f23fd0523d2cd1d5fdc57fbe38d5b32c16c2061c53c8efe28ee5.css" integrity="sha256-u2iDMzsp8j/QUj0s0dX9xX&#43;&#43;ONWzLBbCBhxTyO/ijuU=">
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Docker",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "\/docker\/"
+        },"image": {
+                "@type": "ImageObject",
+                "url": "\/cover.png",
+                "width":  800 ,
+                "height":  600 
+            },"genre": "page","keywords": "docker","wordcount":  263 ,
+        "url": "\/docker\/","datePublished": "2020-04-21T21:56:27\x2b01:00","dateModified": "2020-04-21T21:56:27\x2b01:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+                "@type": "Organization",
+                "name": "xxxx",
+                "logo": {
+                "@type": "ImageObject",
+                "url": "\/logo.png",
+                "width":  127 ,
+                "height":  40 
+                }
+            },"description": ""
+    }
+    </script></head>
+    <body><script>
+            if (!window.localStorage || !window.localStorage.getItem('theme')) {window.isDark = 'light' === 'dark';} else {
+                window.isDark = (window.localStorage && window.localStorage.getItem('theme')) === 'dark';
+            }
+            window.isDark && document.body.classList.add('dark-theme');
+        </script><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title animated bounceIn">
+            <a href="/">Shan Islam</a>
+        </div>
+        <div class="menu"><a class="menu-item" href="/posts/">Posts</a><a class="menu-item active" href="/docker/">Docker</a><a class="menu-item" href="/python/">Python</a><a class="menu-item" href="/scala/">Scala</a><a class="menu-item" href="/tags/">Tags</a><a class="menu-item" href="/about/">About</a><a href="javascript:void(0);" class="theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-rotate-180 fa-fw"></i>
+            </a>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-wrapper">
+        <div class="header-container">
+            <div class="header-title animated bounceIn">
+                <a href="/">Shan Islam</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/docker/" title="">Docker</a><a class="menu-item" href="/python/" title="">Python</a><a class="menu-item" href="/scala/" title="">Scala</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/about/" title="">About</a><a href="javascript:void(0);" class="theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-rotate-180 fa-fw"></i>
+            </a>
+        </div>
+    </div>
+</header>
+
+<script>
+    window.desktopHeaderMode = "fixed";
+    window.mobileHeaderMode = "auto";
+</script>
+<main class="main">
+                <div class="container"><div class="page single special"><h1 class="single-title animated pulse faster">Docker</h1><div class="content" id="content"><h1 id="table-of-contents">Table of Contents</h1>
+<ul>
+<li><a href="#commands" rel="noopener noreffer">Commands</a>
+
+<ul>
+<li><a href="#start-a-shell-prompt" rel="noopener noreffer">Start a shell prompt</a>
+</li>
+<li><a href="#breakdown-of-docker-image" rel="noopener noreffer">Breakdown of docker image</a>
+</li>
+<li><a href="#execute-python-commands-in-container" rel="noopener noreffer">Execute Python commands in container</a>
+</li>
+</ul>
+</li>
+<li><a href="#docker-images" rel="noopener noreffer">Docker Images</a>
+
+<ul>
+<li><a href="#python3--java8-and-haskell" rel="noopener noreffer">python3, java8 and Haskell</a>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="commands">Commands</h1>
+<h3 id="start-a-shell-prompt">Start a shell prompt</h3>
+<p>To start a shell script inside a running container</p>
+<p><code>docker exec -it &lt;container_name&gt; bash</code></p>
+<p>To start a shell script inside an image</p>
+<p><code>docker run -it --entrypoint /bin/bash &lt;image&gt;</code></p>
+<h3 id="breakdown-of-docker-image">Breakdown of docker image</h3>
+<p>Will show a breakdown of layers of docker image</p>
+<p><code>docker image history &lt;image_name&gt;</code></p>
+<h3 id="execute-python-commands-in-container">Execute Python commands in container</h3>
+<p><code>docker exec &lt;container_name&gt; python &lt;script_name&gt; &lt;arg1&gt; &lt;arg2&gt; ..</code></p>
+<h1 id="docker-images">Docker Images</h1>
+<h3 id="python3-java8-and-haskell">python3, java8 and Haskell</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">FROM ubuntu:latest
+ 
+# Update the respository source list
+RUN apt-get update &amp;&amp; \
+    apt-get upgrade -y &amp;&amp; \
+    apt-get install -y  software-properties-common &amp;&amp; \
+    apt-add-repository -y &#34;ppa:hvr/ghc&#34; &amp;&amp;\
+    apt-get update
+
+#Install Python
+RUN apt-get update &amp;&amp; apt-get install -y python3.6\
+    python3-pip openjdk-8-jdk
+
+#Install GHC and Cabal(Haskell bases)
+RUN apt-get -yq update &amp;&amp; apt-get -yq --no-install-suggests --no-install-recommends install \
+    cabal-install-2.0 \
+    cabal-install-head \
+    ghc-8.2.2 \
+    alex-3.1.7 \
+    happy-1.19.5 \
+  &amp;&amp; rm -rf /var/lib/apt/lists/*
+
+#Add these to our bin
+ENV PATH=$HOME/.local/bin:/opt/ghc/8.2.2/bin:/opt/cabal/2.0/bin:/opt/happy/1.19.5/bin:/opt/alex/3.1.7/bin:$PATH
+
+#Install Haskell libraries
+RUN cabal update
+RUN cabal install csv
+RUN cabal install parsec
+RUN cabal install text
+
+
+# create and make our working directory
+WORKDIR /app
+
+#Copy current directory to the domino directory we made
+COPY . /app
+
+#Install Python Packages from requirements txt
+RUN pip3 install -r requirements.txt
+
+
+</code></pre></td></tr></table>
+</div>
+</div></div>
+    </div></div>
+            </main><footer class="footer">
+    <div class="copyright"><div class="copyright-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreffer">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="external nofollow noopener noreffer">LoveIt<i class="far fa-heart fa-fw"></i></a>
+        </div>
+
+        <div class="copyright-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Shan Islam</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+    </div>
+</footer>
+</div><a href="#" class="dynamic-to-top animated faster" id="dynamic-to-top">
+            <span>&nbsp;</span>
+        </a><script src="/lib/smooth-scroll/smooth-scroll.polyfills.min.54590077ee163035c3dd38dc034e9f6915ecbe680dd832f449afa21672cab116.js" integrity="sha256-VFkAd&#43;4WMDXD3TjcA06faRXsvmgN2DL0Sa&#43;iFnLKsRY="></script><script src="/js/theme.min.1482fc67bfa2c3b8cebe476d0037b9321b5b7a8a1525b547b94143948be90e9e.js" integrity="sha256-FIL8Z7&#43;iw7jOvkdtADe5MhtbeooVJbVHuUFDlIvpDp4="></script></body>
+</html>

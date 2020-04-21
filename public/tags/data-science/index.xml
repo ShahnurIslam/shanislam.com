@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Science on Shan Islam</title>
+    <link>/tags/data-science/</link>
+    <description>Recent content in Data Science on Shan Islam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Mon, 17 Dec 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/data-science/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>I&#39;m now a data scientist!</title>
+      <link>/2018-12-15-i-m-now-a-data-scientist/</link>
+      <pubDate>Mon, 17 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018-12-15-i-m-now-a-data-scientist/</guid>
+      <description>TLDR; I went to a recruitment hackathon 6 months ago and got offered a job. Now part of one of the coolest data science teams around
+As the title explains, I started a new job two months ago as a junior data scientist!
+I spoke to a friend of mine when I got the job and he said I should write a blog post on it, so here it is.</description>
+    </item>
+    
+    <item>
+      <title>SQL Part 2 of 4</title>
+      <link>/2017-03-09-sql-part-2-of-4/</link>
+      <pubDate>Fri, 09 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2017-03-09-sql-part-2-of-4/</guid>
+      <description>I said I&amp;rsquo;d continue these posts this year and that&amp;rsquo;s what I plan to do! A sequel to my post on SQL! (My wife thought this was a terrible joke)
+Now let&amp;rsquo;s talk about SEGMENTATION!
+Segmentation isn&amp;rsquo;t something I found as intuitive as basic SQL. You can generally figure out what a basic SQL statement is going to do before it runs. Have a look at my last SQL post for an example.</description>
+    </item>
+    
+    <item>
+      <title>G1 Climax</title>
+      <link>/2017-10-23-g1-climax/</link>
+      <pubDate>Mon, 23 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017-10-23-g1-climax/</guid>
+      <description>Here&amp;rsquo;s a post that is slightly different to the other posts that I&amp;rsquo;ve done so far. Rather than having a step by step tutorial on how to do something. The below allows me to work on my python skills and explain a few things as I go along.
+People who work in Data Science tend to work in programming languages R or Python. I&amp;rsquo;ve been learning both languages over the last two years and at the moment I&amp;rsquo;m trying to get better at my Python.</description>
+    </item>
+    
+    <item>
+      <title>Pip install guide[Mini-Post]</title>
+      <link>/2017-06-03-pip-install-guide-mini-post/</link>
+      <pubDate>Sat, 03 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017-06-03-pip-install-guide-mini-post/</guid>
+      <description>I will get back to the SQL posts but thought I would post something that could be useful to others. If you want to use Python for Data Science you will need additional python libraries.
+I don&amp;rsquo;t have a huge understanding of command line functions and I found it a bit difficult to find a step by step guide on how to install python libraries .
+My wife(the doctor) thought that PIP was something else medical related from a scandal a few years ago.</description>
+    </item>
+    
+    <item>
+      <title>SQL part 1 of 4</title>
+      <link>/2017-05-15-sql-part-1-of-4/</link>
+      <pubDate>Mon, 15 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017-05-15-sql-part-1-of-4/</guid>
+      <description>I had to recall what SQL(Structured Query Language) actually stood for because no one actually calls it &amp;lsquo;Structured Query Language&amp;rsquo;. People just refer to it as &amp;lsquo;see-kwel&amp;rsquo; or as my wife calls it a sequel to a movie and that Godfather 2 is the only acceptable kind.
+If you have a lot of historic data that you need to access and interrogate regularly then SQL is probably the way to go.</description>
+    </item>
+    
+    <item>
+      <title>First post!</title>
+      <link>/2017-04-06-first-post/</link>
+      <pubDate>Thu, 06 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017-04-06-first-post/</guid>
+      <description>You start a blog and then you can&amp;rsquo;t decide what to write about in your first post. After mulling it over I decided I would write why I want to be a data scientist and show any cool things I&amp;rsquo;ve seen.
+If you don&amp;rsquo;t want to read all the below just skip to the bottom that summarises everything and a cool example of data science in action.
+I first discovered data science accidently while perusing courses on Udemy when I was looking for courses to improve my SQL skills.</description>
+    </item>
+    
+  </channel>
+</rss>
