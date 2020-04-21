@@ -195,7 +195,7 @@ enableEmoji = true
           # Disqus Comment Config (https://disqus.com/)
           [languages.en.params.comment.disqus]
             # Disqus shortname to use Disqus in posts
-            shortname = "dillonzq"
+            shortname = "shanislam-com"
           # Gittalk Comment Config (https://github.com/gitalk/gitalk)
           [languages.en.params.comment.gitalk]
             owner = ""
