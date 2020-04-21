@@ -45,20 +45,30 @@ enableEmoji = true
         url = "/tags/"
         weight = 2
       [[languages.en.menu.main]]
-        identifier = "categories"
-        name = "Categories"
-        url = "/categories/"
-        weight = 3
+        identifier = "docker"
+        name = "Docker"
+        url = "/docker/"
+        weight = 2  
+      [[languages.en.menu.main]]
+        identifier = "python"
+        name = "Python"
+        url = "/python/"
+        weight = 2
+      [[languages.en.menu.main]]
+        identifier = "scala"
+        name = "Scala"
+        url = "/scala/"
+        weight = 2  
       [[languages.en.menu.main]]
         identifier = "about"
         name = "About"
         url = "/about/"
-        weight = 4
+        weight = 3
       [languages.en.params]
         # site description
         description = "About LoveIt Theme"
         # site keywords
-        keywords = ["Theme", "Hugo"]
+        keywords = ["Theme", "Hugo","Shan Islam"]
         # site default theme ("light", "dark", "auto")
         defaultTheme = "light"
         # Home Page Info
@@ -73,7 +83,7 @@ enableEmoji = true
             # subtitle shown in home page
             subtitle = "My blog on  data science"
             # whether to use typeit animation for subtitle
-            typeit = true
+            typeit = false
             # whether to show social links
             social = true
           # Home Page Posts
@@ -85,7 +95,7 @@ enableEmoji = true
             defaultHiddenFromHomePage = false
         # Social Info in home page
         [languages.en.params.social]
-          # GitHub = "xxxx"
+          GitHub = "https://github.com/ShahnurIslam"
           Linkedin = "http://www.linkedin.com/in/shanislam"
           Twitter = "http://www.twitter.com/_ShanIslam"
           #Instagram = "xxxx"
@@ -343,7 +353,6 @@ enableEmoji = true
 # Hugo 解析文档的配置
 [markup]
   # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
-  # 代码高亮设置 (https://gohugo.io/content-management/syntax-highlighting)
   [markup.highlight]
     codeFences = true
     guessSyntax = true

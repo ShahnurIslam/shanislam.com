@@ -6,6 +6,7 @@ slug: jekyll-cookies-mini-post
 categories: []
 tags: [Jekyll]
 subtitle: ''
+draft: True
 ---
 
 In May 2011 the EU passed a law that affects all cookie enabled websites. A cookie enabled website now needs to inform those who visit thier site that they are using cookies.  
