@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jekyll on Shan Islam</title>
+    <link>/tags/jekyll/</link>
+    <description>Recent content in Jekyll on Shan Islam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Fri, 02 Mar 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/jekyll/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Jekyll &amp; Cookies[Mini-Post]</title>
+      <link>/2018-03-02-jekyll-cookies-mini-post/</link>
+      <pubDate>Fri, 02 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018-03-02-jekyll-cookies-mini-post/</guid>
+      <description>In May 2011 the EU passed a law that affects all cookie enabled websites. A cookie enabled website now needs to inform those who visit thier site that they are using cookies.
+If this is your first time on my site you would have seen the below.
+CookieConsent I use cookies to track traffic and user behaviour on my site. My blog is created through Beautiful Jekyll and it took me a little while to implement this.</description>
+    </item>
+    
+  </channel>
+</rss>

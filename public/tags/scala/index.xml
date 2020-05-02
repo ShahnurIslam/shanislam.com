@@ -18,7 +18,7 @@
       <pubDate>Tue, 21 Apr 2020 22:24:05 +0100</pubDate>
       
       <guid>/scala/</guid>
-      <description>Table of Contents Useful File exists 1  new java.io.File(file_path).isFile   Split List given seperator 1 2 3 4 5 6 7 8 9 10 11  def listSplit[T](collection:Seq[T],seperator:T):Seq[Seq[T]]= { val name = ListBuffer(ListBuffer[T]()) collection foreach {e =&amp;gt; if(e == seperator){ name += ListBuffer[T]() } else { name.last += e } } name.map(_.toSeq).toSeq }   </description>
+      <description>Table of Contents Useful File exists 1  new java.io.File(file_path).isFile   Split List given seperator 1 2 3 4 5 6 7 8 9 10 11 12  import scala.collection.mutable.ListBuffer def listSplit[T](collection:Seq[T],seperator:T):Seq[Seq[T]]= { val name = ListBuffer(ListBuffer[T]()) collection foreach {e =&amp;gt; if(e == seperator){ name += ListBuffer[T]() } else { name.last += e } } name.map(_.toSeq).toSeq }   </description>
     </item>
     
   </channel>

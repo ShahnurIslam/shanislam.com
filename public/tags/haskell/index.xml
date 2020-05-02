@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>haskell on Shan Islam</title>
+    <link>/tags/haskell/</link>
+    <description>Recent content in haskell on Shan Islam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Tue, 21 Apr 2020 22:24:44 +0100</lastBuildDate>
+    
+	<atom:link href="/tags/haskell/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Haskell</title>
+      <link>/haskell/</link>
+      <pubDate>Tue, 21 Apr 2020 22:24:44 +0100</pubDate>
+      
+      <guid>/haskell/</guid>
+      <description>Structure of a main script with let and do. Save in a script e.g. example.hs
+1 2 3 4 5 6 7 8 9  main :: IO () main = do let printString = &amp;#34;Hi&amp;#34; number = 3 putStrLn printString (putStrLn . show) number   To compile and run we use `stack exec &amp;ndash; runghc examplehs</description>
+    </item>
+    
+  </channel>
+</rss>
