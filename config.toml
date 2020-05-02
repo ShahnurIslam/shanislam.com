@@ -60,6 +60,11 @@ enableEmoji = true
         url = "/scala/"
         weight = 2  
       [[languages.en.menu.main]]
+        identifier = "haskell"
+        name = "Haskell"
+        url = "/haskell/"
+        weight = 2          
+      [[languages.en.menu.main]]
         identifier = "about"
         name = "About"
         url = "/about/"
