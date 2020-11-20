@@ -2,10 +2,11 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>/haskell/</loc><lastmod>2020-05-02T16:26:06&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>/tags/haskell/</loc><lastmod>2020-05-02T16:26:06&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>/</loc><lastmod>2020-05-02T16:26:06&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>/tags/</loc><lastmod>2020-05-02T16:26:06&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>/projects/</loc><lastmod>2020-11-20T21:00:39&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>/</loc><lastmod>2020-11-20T21:00:39&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>/haskell/</loc><lastmod>2020-05-06T16:42:33&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>/tags/haskell/</loc><lastmod>2020-05-06T16:42:33&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>/tags/</loc><lastmod>2020-05-06T16:42:33&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>/scala/</loc><lastmod>2020-05-02T16:26:06&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>/tags/scala/</loc><lastmod>2020-05-02T16:26:06&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>/docker/</loc><lastmod>2020-04-21T22:54:47&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
@@ -20,8 +21,6 @@
             <loc>/2018-12-15-i-m-now-a-data-scientist/</loc><lastmod>2020-03-08T23:26:28&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>/tags/sql/</loc><lastmod>2020-04-21T23:04:05&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>/2017-03-09-sql-part-2-of-4/</loc><lastmod>2020-04-21T23:04:05&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>/tags/jekyll/</loc><lastmod>2020-04-21T22:48:18&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>/2018-03-02-jekyll-cookies-mini-post/</loc><lastmod>2020-04-21T22:48:18&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>/tags/general/</loc><lastmod>2020-03-08T23:26:28&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>/2018-01-23-new-year-new-post/</loc><lastmod>2020-03-08T23:26:28&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>/2017-10-23-g1-climax/</loc><lastmod>2020-03-08T23:26:28&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>

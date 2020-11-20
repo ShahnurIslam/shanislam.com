@@ -3,11 +3,20 @@
         <title>Shan Islam | Shan Islam</title>
         <link>/</link>
         <description>Shan Islam | Shan Islam</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 21 Apr 2020 22:24:44 &#43;0100</lastBuildDate><atom:link href="/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 19 Nov 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="/" rel="self" type="application/rss+xml" /><item>
+                <title>Projects</title>
+                <link>/projects/</link>
+                <pubDate>Thu, 19 Nov 2020 00:00:00 &#43;0000</pubDate><guid>/projects/</guid>
+                <description>&lt;p&gt;&lt;strong&gt;This is a list of my own personal projects&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;web-scraping&#34;&gt;Web Scraping&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/ShahnurIslam/ps5_scraper&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;PS5 Web Scraper&lt;/a&gt;
+ which is written in typescript and deployed on Google Cloud Function. This was a project I created to find stock of PS5 on certain websites and send email notifications if it ever found any.&lt;/p&gt;
+</description>
+            </item><item>
                 <title>Haskell</title>
                 <link>/haskell/</link>
                 <pubDate>Tue, 21 Apr 2020 22:24:44 &#43;0100</pubDate><guid>/haskell/</guid>
-                <description>&lt;p&gt;Structure of a main script with let and do. Save in a script e.g. example.hs&lt;/p&gt;
+                <description>&lt;p&gt;Structure of a main script with let and do syntax. Save in a script e.g. example.hs&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -32,7 +41,7 @@
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;To compile and run we use `stack exec &amp;ndash; runghc examplehs&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;To compile and run we use &lt;code&gt;stack exec -- runghc example.hs&lt;/code&gt;&lt;/p&gt;
 </description>
             </item><item>
                 <title>Scala</title>
