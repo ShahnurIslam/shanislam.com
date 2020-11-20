@@ -1,7 +1,7 @@
 # Haskell
 
 
-Structure of a main script with let and do. Save in a script e.g. example.hs
+Structure of a main script with let and do syntax. Save in a script e.g. example.hs
 
 ```haskell
 main :: IO ()
@@ -14,4 +14,4 @@ main = do
 
 
 ```
-To compile and run we use `stack exec -- runghc examplehs
+To compile and run we use `stack exec -- runghc example.hs`
