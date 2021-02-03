@@ -3,7 +3,24 @@
         <title>Shan Islam | Shan Islam</title>
         <link>/</link>
         <description>Shan Islam | Shan Islam</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 19 Nov 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 03 Feb 2021 20:42:16 &#43;0000</lastBuildDate><atom:link href="/" rel="self" type="application/rss+xml" /><item>
+                <title>Format_dates_tbl</title>
+                <link>/format_dates_tbl/</link>
+                <pubDate>Wed, 03 Feb 2021 20:42:16 &#43;0000</pubDate><guid>/format_dates_tbl/</guid>
+                <description>&lt;table border=&#34;1&#34;&gt;
+&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Code&lt;/td&gt;&lt;td&gt;Meaning&lt;/td&gt;&lt;td&gt;Code&lt;/td&gt;&lt;td&gt;Meaning&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;tt&gt;%a&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;Abbreviated weekday&lt;/td&gt;&lt;td&gt;&lt;tt&gt;%A&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;Full weekday&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;tt&gt;%b&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;Abbreviated month&lt;/td&gt;&lt;td&gt;&lt;tt&gt;%B&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;Full month&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;tt&gt;%c&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;Locale-specific date and time&lt;/td&gt;&lt;td&gt;&lt;tt&gt;%d&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;Decimal date&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;tt&gt;%H&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;Decimal hours (24 hour)&lt;/td&gt;&lt;td&gt;&lt;tt&gt;%I&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;Decimal hours (12 hour)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;tt&gt;%j&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;Decimal day of the year&lt;/td&gt;&lt;td&gt;&lt;tt&gt;%m&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;Decimal month&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;tt&gt;%M&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;Decimal minute&lt;/td&gt;&lt;td&gt;&lt;tt&gt;%p&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;Locale-specific AM/PM&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;tt&gt;%S&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;Decimal second&lt;/td&gt;&lt;td&gt;&lt;tt&gt;%U&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;Decimal week of the year (starting on Sunday)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;tt&gt;%w&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;Decimal Weekday (0=Sunday)&lt;/td&gt;&lt;td&gt;&lt;tt&gt;%W&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;Decimal week of the year (starting on Monday)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;tt&gt;%x&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;Locale-specific Date&lt;/td&gt;&lt;td&gt;&lt;tt&gt;%X&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;Locale-specific Time&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;tt&gt;%y&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;2-digit year&lt;/td&gt;&lt;td&gt;&lt;tt&gt;%Y&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;4-digit year&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;tt&gt;%z&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;Offset from GMT&lt;/td&gt;&lt;td&gt;&lt;tt&gt;%Z&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;Time zone (character)&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</description>
+            </item><item>
                 <title>Projects</title>
                 <link>/projects/</link>
                 <pubDate>Thu, 19 Nov 2020 00:00:00 &#43;0000</pubDate><guid>/projects/</guid>
@@ -230,12 +247,16 @@ RUN pip3 install -r requirements.txt
                 <pubDate>Tue, 18 Dec 2018 15:36:35 &#43;0000</pubDate><guid>/python/</guid>
                 <description>&lt;h1 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h1&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#table-of-contents&#34; rel=&#34;noopener noreffer&#34;&gt;Table of Contents&lt;/a&gt;
+&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#pandas&#34; rel=&#34;noopener noreffer&#34;&gt;Pandas&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#pandas-conditonal-column&#34; rel=&#34;noopener noreffer&#34;&gt;Pandas Conditonal Column&lt;/a&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#applying-functions-to-pandas-columns&#34; rel=&#34;noopener noreffer&#34;&gt;Applying functions to Pandas columns&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#converting-strings-to-date-or-datetime&#34; rel=&#34;noopener noreffer&#34;&gt;Converting strings to date or datetime&lt;/a&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -342,7 +363,51 @@ RUN pip3 install -r requirements.txt
     4    35    70
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description>
+&lt;/div&gt;&lt;h3 id=&#34;converting-strings-to-date-or-datetime&#34;&gt;Converting strings to date or datetime&lt;/h3&gt;
+&lt;p&gt;It would be nice if the whole word worked with ISO dates. Sadly that is not the case, if you&amp;rsquo;ve read in a dataframe and want to convert a column to date time.
+For example, you&amp;rsquo;ve read in the data and the dataframe looks like this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;         date         col2
+    0    01/01/2021   162
+    1    02/01/2021   123
+    2    03/01/2021   87
+    3    04/01/2021   170
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;We can simply convert this to date using &lt;code&gt;pandas.to_datetime&lt;/code&gt; function. You simply pass the series and format you need to convert&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;n&#34;&gt;df&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;date&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;pd&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;to_datetime&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;df&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;date&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;format&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;%d&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;/%m/%Y&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;To determine the format, you can use this table&lt;/p&gt;
+&lt;table border=&#34;1&#34;&gt;
+&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Code&lt;/td&gt;&lt;td&gt;Meaning&lt;/td&gt;&lt;td&gt;Code&lt;/td&gt;&lt;td&gt;Meaning&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;tt&gt;%a&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;Abbreviated weekday&lt;/td&gt;&lt;td&gt;&lt;tt&gt;%A&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;Full weekday&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;tt&gt;%b&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;Abbreviated month&lt;/td&gt;&lt;td&gt;&lt;tt&gt;%B&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;Full month&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;tt&gt;%c&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;Locale-specific date and time&lt;/td&gt;&lt;td&gt;&lt;tt&gt;%d&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;Decimal date&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;tt&gt;%H&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;Decimal hours (24 hour)&lt;/td&gt;&lt;td&gt;&lt;tt&gt;%I&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;Decimal hours (12 hour)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;tt&gt;%j&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;Decimal day of the year&lt;/td&gt;&lt;td&gt;&lt;tt&gt;%m&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;Decimal month&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;tt&gt;%M&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;Decimal minute&lt;/td&gt;&lt;td&gt;&lt;tt&gt;%p&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;Locale-specific AM/PM&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;tt&gt;%S&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;Decimal second&lt;/td&gt;&lt;td&gt;&lt;tt&gt;%U&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;Decimal week of the year (starting on Sunday)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;tt&gt;%w&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;Decimal Weekday (0=Sunday)&lt;/td&gt;&lt;td&gt;&lt;tt&gt;%W&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;Decimal week of the year (starting on Monday)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;tt&gt;%x&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;Locale-specific Date&lt;/td&gt;&lt;td&gt;&lt;tt&gt;%X&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;Locale-specific Time&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;tt&gt;%y&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;2-digit year&lt;/td&gt;&lt;td&gt;&lt;tt&gt;%Y&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;4-digit year&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;tt&gt;%z&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;Offset from GMT&lt;/td&gt;&lt;td&gt;&lt;tt&gt;%Z&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;Time zone (character)&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+</description>
             </item><item>
                 <title>About me</title>
                 <link>/about/</link>

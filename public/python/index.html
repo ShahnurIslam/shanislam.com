@@ -7,14 +7,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>Python | Shan Islam</title>
         <meta name="Description" content="About LoveIt Theme"><meta property="og:title" content="Python" />
-<meta property="og:description" content="Table of Contents  Pandas  Pandas Conditonal Column  Applying functions to Pandas columns     Pandas Pandas Conditonal Column A conditional column is a column in a dataframe that is generated based on other column/s. There are multiple way of doing this in Python but one of the quickest ways is to use the np.where() function. This function is basically the equivalent of an if statement in Excel." />
+<meta property="og:description" content="Table of Contents  Table of Contents  Pandas  Pandas Conditonal Column  Applying functions to Pandas columns  Converting strings to date or datetime     Pandas Pandas Conditonal Column A conditional column is a column in a dataframe that is generated based on other column/s. There are multiple way of doing this in Python but one of the quickest ways is to use the np.where() function." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/python/" />
 <meta property="article:published_time" content="2018-12-18T15:36:35+00:00" />
-<meta property="article:modified_time" content="2020-04-21T22:54:47+01:00" /><meta property="og:site_name" content="Shan Islam" />
+<meta property="article:modified_time" content="2021-02-03T20:50:50+00:00" /><meta property="og:site_name" content="Shan Islam" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Python"/>
-<meta name="twitter:description" content="Table of Contents  Pandas  Pandas Conditonal Column  Applying functions to Pandas columns     Pandas Pandas Conditonal Column A conditional column is a column in a dataframe that is generated based on other column/s. There are multiple way of doing this in Python but one of the quickest ways is to use the np.where() function. This function is basically the equivalent of an if statement in Excel."/>
+<meta name="twitter:description" content="Table of Contents  Table of Contents  Pandas  Pandas Conditonal Column  Applying functions to Pandas columns  Converting strings to date or datetime     Pandas Pandas Conditonal Column A conditional column is a column in a dataframe that is generated based on other column/s. There are multiple way of doing this in Python but one of the quickest ways is to use the np.where() function."/>
 <meta name="theme-color" content="#ffffff">
 <meta name="msapplication-TileColor" content="#da532c">
 <link rel="canonical" href="/python/" />
@@ -37,8 +37,8 @@
                 "url": "\/cover.png",
                 "width":  800 ,
                 "height":  600 
-            },"genre": "page","keywords": "python, pandas","wordcount":  329 ,
-        "url": "\/python\/","datePublished": "2018-12-18T15:36:35\x2b00:00","dateModified": "2020-04-21T22:54:47\x2b01:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            },"genre": "page","keywords": "python, pandas","wordcount":  502 ,
+        "url": "\/python\/","datePublished": "2018-12-18T15:36:35\x2b00:00","dateModified": "2021-02-03T20:50:50\x2b00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
                 "@type": "Organization",
                 "name": "xxxx",
                 "logo": {
@@ -89,12 +89,16 @@
 <main class="main">
                 <div class="container"><div class="page single special"><h1 class="single-title animated pulse faster">Python</h1><div class="content" id="content"><h1 id="table-of-contents">Table of Contents</h1>
 <ul>
+<li><a href="#table-of-contents" rel="noopener noreffer">Table of Contents</a>
+</li>
 <li><a href="#pandas" rel="noopener noreffer">Pandas</a>
 
 <ul>
 <li><a href="#pandas-conditonal-column" rel="noopener noreffer">Pandas Conditonal Column</a>
 </li>
 <li><a href="#applying-functions-to-pandas-columns" rel="noopener noreffer">Applying functions to Pandas columns</a>
+</li>
+<li><a href="#converting-strings-to-date-or-datetime" rel="noopener noreffer">Converting strings to date or datetime</a>
 </li>
 </ul>
 </li>
@@ -201,13 +205,57 @@
     4    35    70
 </code></pre></td></tr></table>
 </div>
-</div></div>
+</div><h3 id="converting-strings-to-date-or-datetime">Converting strings to date or datetime</h3>
+<p>It would be nice if the whole word worked with ISO dates. Sadly that is not the case, if you&rsquo;ve read in a dataframe and want to convert a column to date time.
+For example, you&rsquo;ve read in the data and the dataframe looks like this:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">         date         col2
+    0    01/01/2021   162
+    1    02/01/2021   123
+    2    03/01/2021   87
+    3    04/01/2021   170
+
+</code></pre></td></tr></table>
+</div>
+</div><p>We can simply convert this to date using <code>pandas.to_datetime</code> function. You simply pass the series and format you need to convert</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">],</span><span class="n">format</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%d</span><span class="s1">/%m/%Y&#39;</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>To determine the format, you can use this table</p>
+<table border="1">
+<tbody><tr><td>Code</td><td>Meaning</td><td>Code</td><td>Meaning</td></tr>
+<tr><td><tt>%a</tt></td><td>Abbreviated weekday</td><td><tt>%A</tt></td><td>Full weekday</td></tr>
+<tr><td><tt>%b</tt></td><td>Abbreviated month</td><td><tt>%B</tt></td><td>Full month</td></tr>
+<tr><td><tt>%c</tt></td><td>Locale-specific date and time</td><td><tt>%d</tt></td><td>Decimal date</td></tr>
+<tr><td><tt>%H</tt></td><td>Decimal hours (24 hour)</td><td><tt>%I</tt></td><td>Decimal hours (12 hour)</td></tr>
+<tr><td><tt>%j</tt></td><td>Decimal day of the year</td><td><tt>%m</tt></td><td>Decimal month</td></tr>
+<tr><td><tt>%M</tt></td><td>Decimal minute</td><td><tt>%p</tt></td><td>Locale-specific AM/PM</td></tr>
+<tr><td><tt>%S</tt></td><td>Decimal second</td><td><tt>%U</tt></td><td>Decimal week of the year (starting on Sunday)</td></tr>
+<tr><td><tt>%w</tt></td><td>Decimal Weekday (0=Sunday)</td><td><tt>%W</tt></td><td>Decimal week of the year (starting on Monday)</td></tr>
+<tr><td><tt>%x</tt></td><td>Locale-specific Date</td><td><tt>%X</tt></td><td>Locale-specific Time</td></tr>
+<tr><td><tt>%y</tt></td><td>2-digit year</td><td><tt>%Y</tt></td><td>4-digit year</td></tr>
+<tr><td><tt>%z</tt></td><td>Offset from GMT</td><td><tt>%Z</tt></td><td>Time zone (character)</td></tr></tbody></table>
+</div>
     </div></div>
             </main><footer class="footer">
     <div class="copyright"><div class="copyright-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreffer">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="external nofollow noopener noreffer">LoveIt<i class="far fa-heart fa-fw"></i></a>
         </div>
 
-        <div class="copyright-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Shan Islam</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        <div class="copyright-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020 - 2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Shan Islam</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
     </div>
 </footer>
 </div><a href="#" class="dynamic-to-top animated faster" id="dynamic-to-top">
